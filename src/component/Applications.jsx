@@ -7,17 +7,17 @@ import UserOutput from './UserOutput';
 class Application extends Component {
   
   state = {
-    username : `Hey kartik!! this is my inital message.`
+    username : `Welcome User..`
   }
 
-  updateUserName = function(event) {
+  updateUserName = (event) => {
     this.setState({username : event.target.value});
   }
 
   render() {
     return (
       <div className="App">
-        <UserInput updateUserName={this.updateUserName.bind(this)} username={this.state.username}/>
+        <UserInput updateUserName={this.updateUserName} username={this.state.username}/>
         <UserOutput username={this.state.username}/>
       </div>
     );

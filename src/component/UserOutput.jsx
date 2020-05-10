@@ -1,14 +1,23 @@
-import React, {Component} from 'react';
+// import React, {Component} from 'react';
+// class UserOutput extends Component {
 
-class UserOutput extends Component {
+//     render() {
+//         return (
+//             <div>
+//                 <p>Message : {this.props.username}</p>
+//             </div>
+//         );
+//     }
+// }
 
-    render() {
-        return (
-            <div>
-                <p>{this.props.username}</p>
-            </div>
-        );
-    }
+
+import React from 'react';
+const UserOutput = (props) => {
+    return (
+        <div>
+            <p>Message : {props.username}</p>
+        </div>
+    );    
 }
 
 export default UserOutput;
